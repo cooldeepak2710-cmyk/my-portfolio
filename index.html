@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Deepak Kumar | Futuristic Portfolio</title>
+  <meta name="description" content="Deepak Kumar portfolio - Software Developer, AI & ML Student, and Video Editor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="webgl-canvas" aria-hidden="true"></canvas>
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="#home" class="brand" aria-label="Deepak Kumar home">
+        <span class="brand-mark"></span>
+        <span class="brand-text">Deepak Kumar</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-panel">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#video-editing">Video Editing</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Future-ready developer portfolio</p>
+          <h1 class="hero-title reveal">
+            <span class="line">Deepak</span>
+            <span class="line highlight-text">Kumar</span>
+          </h1>
+          <p class="hero-subtitle reveal">
+            <span id="typing-text">Software Developer | AI &amp; ML Student | Video Editor</span>
+          </p>
+          <p class="hero-description reveal">
+            Engineering polished software experiences, AI-driven ideas, and cinematic edits with a clean, modern visual language.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="button button-primary magnetic" href="deepak_cv.pdf" download>Download CV</a>
+            <button class="button button-secondary magnetic" type="button" id="preview-cv-btn">Preview CV</button>
+          </div>
+
+          <div class="hero-metrics reveal">
+            <article class="metric-card glass-card">
+              <strong>Developer</strong>
+              <span>Web apps and full-stack problem solving</span>
+            </article>
+            <article class="metric-card glass-card">
+              <strong>Video Editing</strong>
+              <span>Adobe-driven motion and storytelling</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="profile-orb glass-card">
+            <div class="profile-ring"></div>
+            <img src="deepak.jpg" alt="Profile placeholder for Deepak Kumar">
+          </div>
+          <div class="floating-chip chip-middle">MERN</div>
+          <div class="floating-chip chip-bottom">EDITOR</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">About</p>
+          <h2>Building sharp interfaces with technical depth.</h2>
+          <p>
+            Deepak Kumar is a Computer Science Engineering student specializing in AI &amp; ML at Lovely Professional University. He is passionate about software development, problem solving, and building modern web applications.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card glass-card tilt-card reveal">
+            <h3>Problem Solving</h3>
+            <p>Breaks complex problems into practical, testable solutions with a focus on reliability.</p>
+          </article>
+          <article class="about-card glass-card tilt-card reveal">
+            <h3>Quick Learner</h3>
+            <p>Adapts quickly to new tools, frameworks, and workflows across engineering and creative work.</p>
+          </article>
+          <article class="about-card glass-card tilt-card reveal">
+            <h3>Adaptability</h3>
+            <p>Comfortable shifting between code, design, experimentation, and production-focused execution.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Skills</p>
+          <h2>Languages, frameworks, and creative tooling.</h2>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skills-column">
+            <h3>Languages</h3>
+            <div class="skills-grid">
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ logo"><span>C++</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java logo"><span>Java</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo"><span>JavaScript</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C logo"><span>C</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo"><span>Python</span></article>
+            </div>
+          </div>
+
+          <div class="skills-column">
+            <h3>Frameworks</h3>
+            <div class="skills-grid">
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML logo"><span>HTML</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo"><span>CSS</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="ReactJS logo"><span>ReactJS</span></article>
+            </div>
+          </div>
+
+          <div class="skills-column">
+            <h3>Tools / Platforms</h3>
+            <div class="skills-grid">
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL logo"><span>MySQL</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma logo"><span>Figma</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="assets/icons/premiere-pro.svg" alt="Adobe Premiere Pro logo"><span>Premiere Pro</span></article>
+              <article class="skill-card glass-card tilt-card reveal"><img src="assets/icons/after-effects.svg" alt="Adobe After Effects logo"><span>After Effects</span></article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Projects</p>
+          <h2>Selected builds with backend and frontend range.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card glass-card tilt-card reveal">
+            <div class="project-image">
+              <img src="todo.jpeg" alt="Todoist Application placeholder">
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Todoist Application</h3>
+                <div class="project-links">
+                  <a href="https://github.com/Caleb-pathi" target="_blank" rel="noreferrer">GitHub</a>
+                  <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
+                </div>
+              </div>
+              <p>A full-stack Todo application built using Node.js, Express and MongoDB with secure authentication.</p>
+              <ul class="feature-list">
+                <li>CRUD operations</li>
+                <li>JWT authentication</li>
+                <li>bcrypt password hashing</li>
+                <li>User-specific protected routes</li>
+                <li>Input validation using zod</li>
+              </ul>
+              <div class="tech-stack">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>JavaScript</span>
+                <span>MongoDB</span>
+                <span>JWT</span>
+                <span>bcrypt</span>
+              </div>
+            </div>
+          </article>
+c
+          <article class="project-card glass-card tilt-card reveal">
+            <div class="project-image">
+              <img src="youtube.jpeg" alt="YouTube Clone placeholder">
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>YouTube Clone</h3>
+                <div class="project-links">
+                  <a href="https://github.com/Caleb-pathi" target="_blank" rel="noreferrer">GitHub</a>
+                  <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
+                </div>
+              </div>
+              <p>A responsive YouTube clone built using React.js and Tailwind CSS that integrates the YouTube Data API.</p>
+              <ul class="feature-list">
+                <li>Video browsing</li>
+                <li>Dynamic search</li>
+                <li>Real-time video data</li>
+                <li>React Router navigation</li>
+                <li>Reusable components</li>
+              </ul>
+              <div class="tech-stack">
+                <span>React.js</span>
+                <span>JavaScript</span>
+                <span>Tailwind CSS</span>
+                <span>React Router</span>
+                <span>YouTube Data API</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="video-editing" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Video Editing</p>
+          <h2>Motion-focused editing experience.</h2>
+          <p>2 Years of experience creating engaging videos using Adobe After Effects and Adobe Premiere Pro.</p>
+        </div>
+
+        <div class="video-grid">
+          <article class="video-tool glass-card reveal">
+            <img src="assets/icons/after-effects.svg" alt="Adobe After Effects icon">
+            <h3>Adobe After Effects</h3>
+          </article>
+          <article class="video-tool glass-card reveal">
+            <img src="assets/icons/premiere-pro.svg" alt="Adobe Premiere Pro icon">
+            <h3>Adobe Premiere Pro</h3>
+          </article>
+        </div>
+
+        <div class="showcase-grid">
+          <article class="showcase-card glass-card reveal">
+            <iframe src="https://www.youtube.com/embed/P8VXPRfw8uU" title="Video editing showcase 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </article>
+          <article class="showcase-card glass-card reveal">
+            <iframe src="https://www.youtube.com/embed/2f0pucCCEA8" title="Video editing showcase 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Certificates</p>
+          <h2>Recent certifications and coursework.</h2>
+        </div>
+
+        <div class="certificates-grid">
+          <article class="certificate-card reveal">
+            <div class="certificate-card-inner">
+              <div class="certificate-face certificate-front glass-card">
+                <img src="google.png" alt="Certificate placeholder">
+                <h3>Computer Networking</h3>
+                <p>Google</p>
+              </div>
+              <div class="certificate-face certificate-back glass-card">
+                <h3>Google</h3>
+                <p>Computer Networking</p>
+                <a class="button button-secondary" href="Bits_Bytes.pdf" target="_blank" rel="noreferrer">View Certificate</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-card-inner">
+              <div class="certificate-face certificate-front glass-card">
+                <img src="free.png" alt="Certificate placeholder">
+                <h3>Fullstack</h3>
+                <p>Freecodecamp</p>
+              </div>
+              <div class="certificate-face certificate-back glass-card">
+                <h3>Freecodecamp</h3>
+                <p>Fullstack</p>
+                <a class="button button-secondary" href="freeCodeCampCertificate.pdf" target="_blank" rel="noreferrer">View Certificate</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-card-inner">
+              <div class="certificate-face certificate-front glass-card">
+                <img src="ibm.png" alt="Certificate placeholder">
+                <h3>Hardware & Operating system</h3>
+                <p>IBM</p>
+              </div>
+              <div class="certificate-face certificate-back glass-card">
+                <h3>IBM</h3>
+                <p>Hardware & Operating system</p>
+                <a class="button button-secondary" href="Hardware_And_Os.pdf" target="_blank" rel="noreferrer">View Certificate</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Achievements</p>
+          <h2>Competition and event highlights.</h2>
+        </div>
+
+        <div class="timeline achievements-timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-content glass-card">
+              <h3>LeetCode</h3>
+              <p>Completed a 50-day coding streak on LeetCode, improving daily problem-solving consistency and strengthening DSA concepts | Leet Code 2025</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Education</p>
+          <h2>Academic timeline.</h2>
+        </div>
+
+        <div class="timeline education-timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-content glass-card">
+              <h3>Lovely Professional University</h3>
+              <p>Bachelor of Technology - Computer Science and Engineering</p>
+              <span>CGPA: 6.39</span>
+              <small>Since August 2023</small>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-content glass-card">
+              <h3>PMS Public School Moradabad, U.P</h3>
+              <p>Intermediate</p>
+              <span>B2</span>
+              <small>Apr 2022 - Mar 2023</small>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-content glass-card">
+              <h3>PMS Public School Moradabad, U.P</h3>
+              <p>Matriculation</p>
+              <span>B1</span>
+              <small>Apr 2020 - Mar 2021</small>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="section-heading contact-copy">
+          <p class="section-tag">Contact</p>
+          <h2>Let’s build something sharp and memorable.</h2>
+          <p>Reach out for collaborations, project work, editing opportunities, or product-focused frontend development.</p>
+
+          <div class="contact-meta">
+            <a class="glass-card contact-pill magnetic" href="mailto:cooldeepak2710@gmail.com">cooldeepak2710@gmail.com</a>
+            <a class="glass-card contact-pill magnetic" href="tel:+917668112584">+91-7668112584</a>
+          </div>
+
+          <div class="social-links">
+            <a class="social-link magnetic" href="https://github.com/deku83757" target="_blank" rel="noreferrer"><img src="assets/icons/github.svg" alt="" aria-hidden="true"><span>GitHub</span></a>
+            <a class="social-link magnetic" href="https://www.linkedin.com/in/deepak-kumar41/" target="_blank" rel="noreferrer"><img src="assets/icons/linkedin.svg" alt="" aria-hidden="true"><span>LinkedIn</span></a>
+            <a class="social-link magnetic" href="mailto:cooldeepak2710@gmail.com"><img src="assets/icons/email.svg" alt="" aria-hidden="true"><span>Email</span></a>
+            <a class="social-link magnetic" href="https://www.youtube.com/" target="_blank" rel="noreferrer"><img src="assets/icons/youtube.svg" alt="" aria-hidden="true"><span>YouTube</span></a>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card reveal">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name">
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="Your email">
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" placeholder="Tell me about your project"></textarea>
+          </label>
+          <button type="submit" class="button button-primary magnetic">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Deepak Kumar</p>
+      <p>Software Developer | AI &amp; ML Student | Video Editor</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="cv-modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-panel glass-card" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
+      <div class="modal-header">
+        <h2 id="cv-modal-title">CV Preview</h2>
+        <button class="modal-close" type="button" aria-label="Close CV preview">&times;</button>
+      </div>
+      <iframe src="deepak_cv.pdf" title="CV preview"></iframe>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="three-background.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

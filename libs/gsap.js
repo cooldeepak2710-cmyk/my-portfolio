@@ -1,0 +1,1 @@
+/* Local vendor slot for GSAP. The page currently uses the CDN include in index.html. */
